@@ -12,12 +12,11 @@ void methodOne()
   int i = 1000; // You are not allowed to change this line. 
   
   int max = 10;
-  
+  String output = "";
   if (i > max)
   {
-    String output = "i is greater than "+max+".";   
+    output = "i is greater than " + max + ".";   
   }
-  
   println(output);
    
 }
@@ -41,9 +40,32 @@ void methodTwo()
   }
   
   // Print the name of the weekday here: 
-  
-    
-    
+  switch (weekDay) {
+    case 0:
+      println("Monday");
+      break;
+    case 1:
+      println("Tuesday");
+      break;
+    case 2:
+      println("Wednesday");
+      break;
+    case 3:
+      println("Thursday");
+      break;
+    case 4:
+      println("Friday");
+      break;
+    case 5:
+      println("Saturday");
+      break;
+    case 6:
+      println("Sunday");
+      break;
+  }
   // Print if it is weekend here:
+  if (weekDay == 5 || weekDay == 6) {
+    print("It's weekend!");
+  }
   
 }
