@@ -1,11 +1,21 @@
 int maxCirc = 100;
-int randomX = int(random(500));
+
 
 void setup(){
   size(500,500);
-  println(randomX);
+  
 }
 
 void draw(){
-  
+  //Loop der tegner circler
+  for (int i = 0; i < maxCirc; i++){
+    int randomX = int(random(width));
+    int randomY = int(random(height));
+    // Tilfældig bredde og højde
+    int randomWnH = int(random(150));
+    println(randomX);
+    ellipseMode(CENTER);
+    ellipse(randomX, randomY, randomWnH, randomWnH);
+  }
+  noLoop();
 }
