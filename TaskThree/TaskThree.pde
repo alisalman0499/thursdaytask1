@@ -13,7 +13,7 @@ if (a == 10 || b == 10 || a + b == 10) {
 int min = 3;
 int max = 10;
 
-if (min + max > 10 && (a <= 5 || b <= 5)) {
+if (min + max > 10 && (min <= 5 || max <= 5)) {
   println(success);
 } else {
   println(failure);

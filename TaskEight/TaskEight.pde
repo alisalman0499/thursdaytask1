@@ -13,7 +13,6 @@ void draw(){
     int randomY = int(random(height));
     // Tilfældig bredde og højde
     int randomWnH = int(random(150));
-    println(randomX);
     ellipseMode(CENTER);
     //Tilføjer tilfældig farve
     fill(random(255), random(255), random(255));
