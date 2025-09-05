@@ -1,5 +1,5 @@
 // Task 1
-String month = "Januar";
+String month = "Februar";
 int days = 0;
 
 switch (month) {
@@ -18,6 +18,10 @@ switch (month) {
   case "September":
   case "November":
   days = 30;
-  break;  
+  break;
+  
+  case "Februar":
+  days = 28;
+  break;
 }
 println(month + " har " + days + " dage");
